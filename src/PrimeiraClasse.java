@@ -4,7 +4,7 @@ public class PrimeiraClasse {
 
         int anoDeLancamento = 2023;
         String nomeDoFilme = "Barbie";
-        System.out.println("Filme: " + nomeDoFilme + "\n" + "Ano de lançamento: " + anoDeLancamento);
+        System.out.println("br.com.alura.screenmatch.modelos.Filme: " + nomeDoFilme + "\n" + "Ano de lançamento: " + anoDeLancamento);
 
         boolean incluidoNoPlano = true;
         double notaDoFilme = 8.1;
@@ -15,8 +15,8 @@ public class PrimeiraClasse {
 
         String sinopse;
         sinopse = """
-                Filme: Barbie
-                Filme de comédia sobre a boneca mais famosa do mundo.
+                br.com.alura.screenmatch.modelos.Filme: Barbie
+                br.com.alura.screenmatch.modelos.Filme de comédia sobre a boneca mais famosa do mundo.
                 Avaliação: Muito bom!
                 Ano de lançamento
                 """ + anoDeLancamento;

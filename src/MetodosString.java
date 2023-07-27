@@ -4,8 +4,8 @@ public class MetodosString {
         int anoDeLancamento = 2023;
         String sinopse;
         sinopse = """
-                Filme: Barbie
-                Filme de comédia sobre a boneca mais famosa do mundo.
+                br.com.alura.screenmatch.modelos.Filme: Barbie
+                br.com.alura.screenmatch.modelos.Filme de comédia sobre a boneca mais famosa do mundo.
                 Avaliação: Muito bom!
                 Ano de lançamento
                 """ + anoDeLancamento;
