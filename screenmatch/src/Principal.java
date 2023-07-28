@@ -1,4 +1,6 @@
+import br.com.alura.screenmatch.calculos.CalculadoraDeTempo;
 import br.com.alura.screenmatch.modelos.Filme;
+import br.com.alura.screenmatch.modelos.Serie;
 
 public class Principal {
     public static void main(String[] args) {
@@ -24,5 +26,22 @@ public class Principal {
         meuFilme2.avalia(10);
         meuFilme2.avalia(10);
         meuFilme2.exibeFichaTecnica();
+
+        Serie serie = new Serie();
+        serie.setNome("Stranger Things");
+        serie.setAnoDeLancamento(2018);
+        serie.setIncluidoNoPlano(true);
+        serie.setTemporadas(4);
+        serie.setEpisodiosPorTemporada(12);
+        serie.setMinutosPorEpisodio(60);
+        serie.exibeFichaTecnica();
+        System.out.println("Duração para maratonar Stranger Things: " + serie.getDuracaoEmMinutos());
+
+        CalculadoraDeTempo calculadora = new CalculadoraDeTempo();
+        calculadora.inclui(meuFilme);
+        calculadora.inclui(meuFilme2);
+        calculadora.inclui(serie);
+        System.out.println(calculadora.getTempoTotal());
+
     }
 }
