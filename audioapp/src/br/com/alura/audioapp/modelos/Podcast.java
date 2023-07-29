@@ -1,10 +1,12 @@
-package br.com.alura.audioapp;
-public class Podcasts extends Audio {
+package br.com.alura.audioapp.modelos;
+
+import br.com.alura.audioapp.modelos.Audio;
+
+public class Podcast extends Audio {
     private String nomeApresentadores;
     private int temporadas;
     private int quantidadeEpisodios;
     private double duracaoDoEpisodio;
-
 
     public String getNomeApresentadores() {
         return nomeApresentadores;
@@ -40,14 +42,18 @@ public class Podcasts extends Audio {
     public double getDuracaoEmMinutos(){
         return temporadas * duracaoDoEpisodio * quantidadeEpisodios;
     }
-
     public void mostraFichaTecnica(){
         System.out.println("Título: " + getTitulo());
         System.out.println("Apresentado por: " + nomeApresentadores);
         System.out.println("Duração do episódio: " + getDuracaoDoEpisodio() + " minutos.");
-        System.out.println("Total de reproduções: " + getTotalDeReproducoes());
-        System.out.println("Curtidas: " + getCurtidas());
-        System.out.println("Classificacao: " + getClassificacao());
     }
 
+    @Override
+    public int getClassificacao() {
+        if(this.getCurtidas() > 500){
+            return 10;
+        } else {
+            return 8;
+        }
+    }
 }

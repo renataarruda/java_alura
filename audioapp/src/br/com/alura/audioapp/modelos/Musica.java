@@ -1,6 +1,8 @@
-package br.com.alura.audioapp;
+package br.com.alura.audioapp.modelos;
 
-public class Musicas extends Audio {
+import br.com.alura.audioapp.modelos.Audio;
+
+public class Musica extends Audio {
     private String nomeArtista;
     private String album;
     private boolean lancamento = false;
@@ -51,9 +53,14 @@ public class Musicas extends Audio {
         System.out.println("Nome do artista: " + nomeArtista);
         System.out.println("Álbum: " + album);
         System.out.println("Ano de lançamento: " + anoLancamento);
-        System.out.println("Duração em minutos: " + getDuracaoEmMinutos());
-        System.out.println("Curtidas: " + getCurtidas());
-        System.out.println("Classificacao: " + getClassificacao());
         ehLancamento();
+    }
+    @Override
+    public int getClassificacao() {
+        if(this.getTotalDeReproducoes() > 2000){
+            return 10;
+        } else {
+            return 8;
+        }
     }
 }
