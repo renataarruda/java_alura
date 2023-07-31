@@ -1,3 +1,5 @@
+package br.com.alura.exercicios;
+
 import com.sun.source.tree.CompilationUnitTree;
 
 import java.util.Random;

@@ -1,3 +1,5 @@
+package br.com.alura.contabancaria.desafio;
+
 import java.util.Scanner;
 
 public class DesafioContaBancaria {

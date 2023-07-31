@@ -1,3 +1,5 @@
+package br.com.alura.exercicios;
+
 public class ExercicioTemperatura {
     public static void main(String[] args){
         // Escreva um programa que converta a temperatura em graus Celsius para Fahrenheit.
