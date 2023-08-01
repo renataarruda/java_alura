@@ -1,14 +1,16 @@
+package br.com.alura.screenmatch.principal;
+
 import br.com.alura.screenmatch.calculos.CalculadoraDeTempo;
 import br.com.alura.screenmatch.calculos.FiltroRecomendacao;
 import br.com.alura.screenmatch.modelos.Episodio;
 import br.com.alura.screenmatch.modelos.Filme;
 import br.com.alura.screenmatch.modelos.Serie;
 
+import java.util.ArrayList;
+
 public class Principal {
     public static void main(String[] args) {
-        Filme meuFilme = new Filme();
-        meuFilme.setNome("Oppenheimer");
-        meuFilme.setAnoDeLancamento(2023);
+        Filme meuFilme = new Filme("Oppenheimer", 2023);
         meuFilme.setDuracaoEmMinutos(180);
         meuFilme.setIncluidoNoPlano(false);
 
@@ -18,9 +20,7 @@ public class Principal {
         meuFilme.exibeFichaTecnica();
         System.out.println("\n");
 
-        Filme meuFilme2 = new Filme();
-        meuFilme2.setNome("Matrix");
-        meuFilme2.setAnoDeLancamento(1999);
+        Filme meuFilme2 = new Filme("Matrix", 1999);
         meuFilme2.setDuracaoEmMinutos(136);
         meuFilme2.setIncluidoNoPlano(true);
 
@@ -29,9 +29,7 @@ public class Principal {
         meuFilme2.avalia(10);
         meuFilme2.exibeFichaTecnica();
 
-        Serie serie = new Serie();
-        serie.setNome("Stranger Things");
-        serie.setAnoDeLancamento(2018);
+        Serie serie = new Serie("Stranger Things",2018);
         serie.setIncluidoNoPlano(true);
         serie.setTemporadas(4);
         serie.setEpisodiosPorTemporada(12);
@@ -53,6 +51,21 @@ public class Principal {
         episodio.setSerie(serie);
         episodio.setTotalVisualizacoes(300);
         filtro.filtra(episodio);
+
+        //É possível usar var em Java
+        var filmeDoPaulo = new Filme("Dogville",2003);
+        filmeDoPaulo.setDuracaoEmMinutos(200);
+        filmeDoPaulo.avalia(10);
+
+        //Array List
+        // var listaDeFilmes = new ArrayList<>();
+        ArrayList<Filme> listaDeFilmes = new ArrayList<>();
+        listaDeFilmes.add(filmeDoPaulo);
+        listaDeFilmes.add(meuFilme);
+        listaDeFilmes.add(meuFilme2);
+        System.out.println("Tamanho da lista: " + listaDeFilmes.size());
+        System.out.println("Primeiro filme: " + listaDeFilmes.get(0).getNome());
+        System.out.println(listaDeFilmes);
 
     }
 }
