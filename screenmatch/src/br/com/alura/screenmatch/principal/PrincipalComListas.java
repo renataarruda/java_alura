@@ -4,9 +4,7 @@ import br.com.alura.screenmatch.modelos.Filme;
 import br.com.alura.screenmatch.modelos.Serie;
 import br.com.alura.screenmatch.modelos.Titulo;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
+import java.util.*;
 
 public class PrincipalComListas {
     public static void main(String[] args) {
@@ -23,7 +21,7 @@ public class PrincipalComListas {
         //f1.setNome("A Origem");
         //System.out.println(filmeDoPaulo);
 
-        ArrayList<Titulo> lista = new ArrayList<>();
+        List<Titulo> lista = new LinkedList<>();
         lista.add(filmeDoPaulo);
         lista.add(meuFilme);
         lista.add(meuFilme2);
