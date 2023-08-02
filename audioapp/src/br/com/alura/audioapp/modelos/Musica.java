@@ -1,7 +1,5 @@
 package br.com.alura.audioapp.modelos;
 
-import br.com.alura.audioapp.modelos.Audio;
-
 public class Musica extends Audio {
     private String nomeArtista;
     private String album;

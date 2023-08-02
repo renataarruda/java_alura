@@ -1,7 +1,5 @@
 package br.com.alura.audioapp.modelos;
 
-import br.com.alura.audioapp.modelos.Audio;
-
 public class Podcast extends Audio {
     private String nomeApresentadores;
     private int temporadas;
