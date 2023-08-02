@@ -17,4 +17,10 @@ através da aplicação *Áudio App*. Implementei e corrigi o código
 posteriormente, seguindo as sugestões da instrutora.
 
 ### Java: Trabalhando com listas e coleções de dados
-(Em andamento)
+Avançando com o projeto do *ScreenMatch*, foi criada uma nova classe
+principal para trabalhar com listas em Java, utlizando apoio da
+documentação do [```Java 17```](https://docs.oracle.com/en/java/javase/17/docs/api/index.html).
+
+Para o desafio final, foi criada uma aplicação de compras que deveria contar
+
+
