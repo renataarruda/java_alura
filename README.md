@@ -12,15 +12,20 @@ O curso implementa o projeto de catálogo de filmes utilizando os conceitos
 de orientação a objetos: Abstração, Encapsulamento, Herança e
 Polimorfismo, além de abordar o uso de interfaces.
 
-Para o desafio final, apliquei os conceitos estudados no curso
-através da aplicação *Áudio App*. Implementei e corrigi o código 
+Para o desafio final, foram aplicados os conceitos estudados no curso
+através da aplicação *Áudio App*. O código foi corrigido e implementado
 posteriormente, seguindo as sugestões da instrutora.
 
-### Java: Trabalhando com listas e coleções de dados
+### Java: trabalhando com listas e coleções de dados
 Avançando com o projeto do *ScreenMatch*, foi criada uma nova classe
 principal para trabalhar com listas em Java, utlizando apoio da
 documentação do [```Java 17```](https://docs.oracle.com/en/java/javase/17/docs/api/index.html).
 
-Para o desafio final, foi criada uma aplicação de compras que deveria contar
+Para o desafio final, foi criada uma aplicação de compras chamada ```Compras App```,
+utilizando a interface ```List``` de ```Collections``` e ```Comparable```.
+
+### Java: consumindo API, gravando arquivos e lidando com erros
+(Em andamento)
+
 
 
