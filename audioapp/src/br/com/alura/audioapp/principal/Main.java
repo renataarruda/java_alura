@@ -1,3 +1,5 @@
+package br.com.alura.audioapp.principal;
+
 import br.com.alura.audioapp.modelos.MinhasPreferidas;
 import br.com.alura.audioapp.modelos.Musica;
 import br.com.alura.audioapp.modelos.Podcast;
