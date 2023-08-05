@@ -35,3 +35,5 @@ Ao longo do projeto, a instrutora abordou o tratamento de exceções, falando so
 hierarquia de exceções em ```Java``` e criando a classe ```ErrodeConversaoDeAnoException```, para lançar nossa própria exceção.
 
 Finalizando o projeto *ScreenMatch*,  foi mostrado como fazer a gravação de dados em arquivo JSON.
+
+Como desafio, a ideia é reorganizar a classe ```PrincipalComBusca```, refatorando o projeto.
