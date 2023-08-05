@@ -36,4 +36,4 @@ hierarquia de exceções em ```Java``` e criando a classe ```ErrodeConversaoDeAn
 
 Finalizando o projeto *ScreenMatch*,  foi mostrado como fazer a gravação de dados em arquivo JSON.
 
-Como desafio, a ideia é reorganizar a classe ```PrincipalComBusca```, refatorando o projeto.
+Como desafio, a ideia é reorganizar a classe ```PrincipalComBusca```, refatorando o código.
