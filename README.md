@@ -25,7 +25,13 @@ Para o desafio final, foi criada uma aplicação de compras chamada ```Compras A
 utilizando a interface ```List``` de ```Collections``` e ```Comparable```.
 
 ### Java: consumindo API, gravando arquivos e lidando com erros
-(Em andamento)
+No curso, foi ensinado como consumir a API [*OMDb*](https://www.omdbapi.com/) utilizando
+o pacote ```java.net.http```, e foi criada a classe imutável  ```TituloOmdb```, apresentando conceitos do recurso Record.
 
+Também foi mostrado o formato de dados ```JSON```e a utlização da biblioteca [```GSON```](https://mvnrepository.com/artifact/com.google.code.gson/gson/2.10.1)
+para serializar e desserializar os dados.
 
+Ao longo do projeto, a instrutora abordou o tratamento de exceções, falando sobre a
+hierarquia de exceções em ```Java``` e criando a classe ```ErrodeConversaoDeAnoException```, para lançar nossa própria exceção.
 
+Finalizando o projeto *ScreenMatch*,  foi mostrado como fazer a gravação de dados em arquivo JSON.
